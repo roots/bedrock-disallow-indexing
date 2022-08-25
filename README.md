@@ -28,4 +28,4 @@
 
 ## Overview
 
-This plugin will prevent indexing of a site when `WP_ENV` is not set to `production`.
+This plugin will prevent indexing of a site when [`WP_ENV`](https://docs.roots.io/bedrock/master/environment-variables/#wp-env) or [`wp_get_environment_type()`](https://developer.wordpress.org/reference/functions/wp_get_environment_type/) is not set to `production`.
