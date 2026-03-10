@@ -3,7 +3,7 @@
 Plugin Name:  Disallow Indexing
 Plugin URI:   https://roots.io/bedrock/
 Description:  Disallow indexing of your site on non-production environments.
-Version:      2.0.0
+Version:      2.0.1
 Author:       Roots
 Author URI:   https://roots.io/
 Text Domain:  roots
