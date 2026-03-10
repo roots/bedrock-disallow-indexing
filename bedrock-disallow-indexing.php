@@ -24,7 +24,7 @@ add_action('admin_init', function () {
     add_action('admin_notices', function () {
         $env = defined('WP_ENV') && WP_ENV ? WP_ENV : null;
 
-        if (!$env && function_exists('wp_get_environment_type')) {
+        if (!$env) {
             $env = wp_get_environment_type();
         }
 
@@ -48,7 +48,7 @@ add_action('admin_init', function () {
                 /* translators: 1: Bedrock prefix, 2: Environment type. */
                 __('%1$s Search engine indexing has been discouraged because the current environment is %2$s.', 'roots'),
                 '<strong>Bedrock:</strong>',
-                '<code>' . $env . '</code>'
+                '<code>' . esc_html($env) . '</code>'
             )
         );
     });
